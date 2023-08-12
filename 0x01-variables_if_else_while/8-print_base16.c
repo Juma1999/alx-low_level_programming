@@ -1,0 +1,19 @@
+#include <stdio.h>
+/**
+ * main - Entry point
+ * Description: Stuff
+ * Return: 0 (success)
+*/
+int main(void)
+{
+	char ch = '0';
+
+	while (ch <= 'f')
+	{
+		if (ch <= '9' || ch >= 'a')
+			putchar(ch);
+		ch++;
+	}
+	putchar('\n');
+	return (0);
+}

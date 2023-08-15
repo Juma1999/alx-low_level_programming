@@ -2,7 +2,6 @@
 *File:main.h
 *Desc:header file containing functions declaration
 */
-#ifndef MAIN_H
 #define MAIN_H
 
 #include <stdio.h>

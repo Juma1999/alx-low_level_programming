@@ -6,7 +6,7 @@
  * and if it is positive, negative, or zero
  * Return: 0
  */
-void poistive_or_negative(int n)
+void poisitive_or_negative(int n)
 {
 	if (n > 0)
 		printf("%i is positive\n", n);

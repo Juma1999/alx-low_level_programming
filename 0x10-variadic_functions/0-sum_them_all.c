@@ -8,21 +8,23 @@
 *Return: 0 if n is null
 * or sum of parameters in other case
 */
+
 int sum_them_all(const unsigned int n, ...)
 {
-	va_list ap;
-	unsigned int i;
-	int sum = 0;
 
-	va_start(ap, n);
-	for (i = 0; i < n; i++)
-	{
-		x = va_arg(ap, int);
-		sum += x;
-	}
-	va_end(ap);
-	if (sum == 0)
-		return (0);
-	else
-		return (sum);
+va_list li;
+int sum = 0;
+unsigned int i;
+
+va_start(li, n);
+
+if (n != 0)
+{
+for (i = 0; i < n; i++)
+sum += va_arg(li, int);
+}
+
+va_end(li);
+return (sum);
+
 }
